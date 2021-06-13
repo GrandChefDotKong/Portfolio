@@ -3,7 +3,7 @@
 :root {
     --header-height: 3rem;
 
-    --hue-color: 250;
+    --hue-color: 142;
     --primary-color: hsl(var(--hue-color), 69%, 61%);
     --secondary-color: hsl(var(--hue-color), 69%, 61%);
     --primary-color-alt: hsl(var(--hue-color), 57%, 53%);
@@ -276,15 +276,15 @@ img {
 }
 
 .home__scroll {
-    /*display: none;*/
+    display: none;
 }
 
-.home-scroll-button {
+.home__scroll-button {
     color: var(--primary-color);
     transition: .3S;
 }
 
-.home-scroll-button {
+.home__scroll-button:hover {
     transform: translateY(.25rem);
 }
 
@@ -302,3 +302,93 @@ img {
 .home__scroll-arrow {
     font-size: 1.25rem;
 }
+
+/* button */
+.button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+}
+
+.button:hover {
+    background-color: var(--primary-color-alt);
+}
+
+.button__icon {
+    font-size: 1.25rem;
+    margin-left: var(--mb-0-5);
+    transition: .3S;   
+}
+
+.button--flex {
+    display: inline-flex;
+    align-items: center;
+}
+
+.about__img {
+    width: 200px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.about__description {
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about__info-title  {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+
+.about__info-name {
+    font-size: var(--smaller-font-size);
+}
+
+.about__info-title, .about__info-name {
+    display: block;
+    text-align: center;
+}
+
+.about__buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.skills__container {
+    row-gap: 0;
+}
+
+.skills__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+}
+
+.skills__icon, .skills__arrow {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.skills__icon {
+    margin-right: var(--mb-0-75);
+}
+
+
+
+
+
+
+
