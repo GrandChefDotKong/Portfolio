@@ -60,4 +60,54 @@ tabs.forEach(tab => tab.addEventListener('click', () => {
     tab.classList.add('qualification__active');
 }))
 
+// Modal services
+
+const modalViews = document.querySelectorAll('.services__modal');
+const modalBtns = document.querySelectorAll('.services__button');
+const modalCloses = document.querySelectorAll('.services__modal-close');
+
+let modal = (modalClick) => {
+    modalViews[modalClick].classList.add('active-modal');
+}
+
+modalBtns.forEach((modalBtn, i) => {
+    modalBtn.addEventListener('click', () => modal(i));
+});
+
+modalCloses.forEach((modalClose) => {
+    modalClose.addEventListener('click', () => {
+        modalViews.forEach(modalView => modalView.classList.remove('active-modal'));
+
+    })
+})
+
+// Swiper portfolio
+
+let swiper = new Swiper('.swiper-container', {
+    cssMode: true,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
