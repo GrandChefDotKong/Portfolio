@@ -10,6 +10,7 @@
     <title>Portfolio</title>
 </head>
 <body>
+<!-- HEADER -->
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">Adrien</a>
@@ -57,12 +58,13 @@
         </nav>
     </header>
     <main class="main">
+<!-- HOME -->
         <section class="home section" id="home">
             <div class="home__container container grid">
                 <div class="home__content grid">
                     <div class="home__social">
-                        <a href="#" class="home__social-icon" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
-                        <a href="#" class="home__social-icon" target="_blank"><i class="uil uil-github-alt"></i></a>
+                        <a href="https://www.linkedin.com/in/adrien-gautier-pauchet/" class="home__social-icon" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+                        <a href="https://github.com/GrandChefDotKong" class="home__social-icon" target="_blank"><i class="uil uil-github-alt"></i></a>
                     </div>
                     <div class="home__img">
                         <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -82,17 +84,17 @@
                         </svg>
                     </div>
                     <div class="home__data">
-                        <h1 class="home__title">Hi, I am Adrien</h1>
-                        <h3 class="home__subtitle">Full Stack Developer</h3>
+                        <h1 class="home__title">Looking for a developer ?</h1>
+                        <h3 class="home__subtitle">Hi, I am Adrien <i class="uil uil-smile-beam home__subtitle-icon"></i></h3>
                         <p class="home__description">
-                            High Level experience in development, producing quality work
+                            A developer, here to assist you in your project.
                         </p>
-                        <a href="#contact" class="button button--flex">
+                        <a href="#contact" class="home__contact button button--flex">
                             Contact Me <i class="uil uil-message button__icon"></i>
                         </a>
                     </div>
                 </div>
-                <home class="scroll">
+                <home class="home__scroll">
                     <a href="#about" class="home__scroll-button button--flex">
                         <i class="uil uil-mouse-alt home__scroll-mouse"></i>
                         <span class="home__scroll-name">Scroll down</span>
@@ -101,6 +103,7 @@
                 </home>
             </div>
         </section>
+<!-- ABOUT -->
         <section class="about section" id="about">
             <h2 class="section__title">About Me</h2>
             <span class="section__subtitle">My introduction</span>
@@ -108,7 +111,7 @@
                 <img src="assets/img/portfolio1.jpg" alt="me" class="about__img">
                 <div class="about__data">
                     <p class="about__description">
-                        Web developer, with exentisive knowledge and years experience, working in web techologies,
+                        Web developer, with exentisive knowledge and years experience, working in web technologies,
                         delivering quality work. 
                     </p>
                     <div class="about__info">
@@ -117,22 +120,37 @@
                             <span class="about__info-name">Years <br> experience</span>
                         </div>
                         <div>
-                            <span class="about__info-title">20+</span>
-                            <span class="about__info-name">Completed <br> projects</span>
-                        </div>
-                        <div>
-                            <span class="about__info-title">20+</span>
+                            <span class="about__info-title">10+</span>
                             <span class="about__info-name">Completed <br> projects</span>
                         </div>
                     </div>
                     <div class="about__buttons">
                         <a href="#" class="button button--flex">
-                            Download CV<i class="uil uil-download-alt button__icon"></i>
+                            My resume <i class="uil uil-link button__icon"></i>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
+<!-- PROJECT -->
+        <section class="project section">
+            <div class="project__bg">
+                <div class="project__container container grid">
+                    <div class="project__data">
+                        <h2 class="project__title">You have a new project ?</h2>
+                        <p class="project__description">
+                            Let me take care of the technical details and let's build your vision !!
+                        </p>
+                        
+                        <a href="#contact" class="button button--flex button--white">
+                            Contact Me <i class="uil uil-message project__icon button__icon"></i>
+                        </a>
+                    </div>
+                    <img src="./assets/img/startup.svg" alt="message icon" class="project__img">
+                </div>
+            </div>
+        </section>
+<!-- SKILLS -->
         <section class="skills section" id="skills">
             <h2 class="section__title">Skills</h2>
             <span class="section__subtitle">My technical level</span>
@@ -142,7 +160,7 @@
                         <i class="uil uil-brackets-curly skills__icon"></i>
                         <div>
                             <h1 class="skills__title">Frontend developer</h1>
-                            <span class="skills__subtitle">More than 4 years</span>
+                            <span class="skills__subtitle">More than 6 years</span>
                         </div>
                         <i class="uil-angle-down skills__arrow"></i>
                     </div>
@@ -150,7 +168,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">HTML</h3>
-                                <span class="skills__number">90%</span>
+                                <span class="skills__number">95%</span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__html"></span>
@@ -159,7 +177,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">CSS</h3>
-                                <span class="skills__number">90%</span>
+                                <span class="skills__number">95%</span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__css"></span>
@@ -168,7 +186,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">Javascript</h3>
-                                <span class="skills__number">85%</span>
+                                <span class="skills__number">90%</span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__js"></span>
@@ -207,7 +225,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">SQL</h3>
-                                <span class="skills__number">65%</span>
+                                <span class="skills__number">70%</span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__sql"></span>
@@ -215,9 +233,50 @@
                         </div>
                     </div>
                 </div>
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-desktop-alt skills__icon"></i>
+                        <div>
+                            <h1 class="skills__title">Software developer</h1>
+                            <span class="skills__subtitle">More than 8 years</span>
+                        </div>
+                        <i class="uil-angle-down skills__arrow"></i>
+                    </div>
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">C++</h3>
+                                <span class="skills__number">65%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__cpp"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">C#</h3>
+                                <span class="skills__number">70%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__sql"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Linux</h3>
+                                <span class="skills__number">80%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__php"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="qualification section">
+<!-- QUALIFICATIONS -->
+<!--
+        <section class="qualification section" style="display: none;">
             <h2 class="section__title">Qualification</h2>
             <span class="section__subtitle">My personal journey</span>
             <div class="qualification__container container">
@@ -323,14 +382,16 @@
                 </div>
             </div>
         </section>
+-->
+<!-- SERVICES -->
         <section class="services section" id="services">
             <h2 class="section__title">Services</h2>
             <span class="section__subtitle">What i offer</span>
             <div class="services__container container grid">
                 <div class="services__content">
                     <div>
-                        <i class="uil uil-web-grid services__icon"></i>
-                        <h3 class="serbices__title">Ui/Ux <br> Designer</h3>
+                        <img src="./assets/img/developpement-web.svg" alt="frontend development">
+                        <h3 class="services__title">Frontend <br> Development</h3>
                     </div>
                     <span class="button button--flex button--small button--link services__button">
                         View More
@@ -338,7 +399,7 @@
                     </span>
                     <div class="services__modal">
                         <div class="services__modal-content">
-                            <h4 class="services__modal-title">Ui/Ux <br> Designer</h4>
+                            <h4 class="services__modal-title">Frontend <br> Development</h4>
                             <i class="uil uil-times services__modal-close"></i>
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
@@ -362,8 +423,8 @@
                 </div>
                 <div class="services__content">
                     <div>
-                        <i class="uil uil-arrow services__icon"></i>
-                        <h3 class="serbices__title">Frontend <br> Developer</h3>
+                        <img src="./assets//img/serveur.svg" alt="serveur icon">
+                        <h3 class="services__title">Backend <br> Development</h3>
                     </div>
                     <span class="button button--flex button--small button--link services__button">
                         View More
@@ -371,7 +432,7 @@
                     </span>
                     <div class="services__modal">
                         <div class="services__modal-content">
-                            <h4 class="services__modal-title">Frontend <br> Developer</h4>
+                            <h4 class="services__modal-title">Backend <br> Development</h4>
                             <i class="uil uil-times services__modal-close"></i>
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
@@ -395,8 +456,8 @@
                 </div>
                 <div class="services__content">
                     <div>
-                        <i class="uil uil-pen services__icon"></i>
-                        <h3 class="serbices__title">Branding <br> Designer</h3>
+                        <img src="./assets/img/police-de-caractere.svg" alt="police de caractere icon">
+                        <h3 class="services__title">Ui/Ux <br> Design</h3>
                     </div>
                     <span class="button button--flex button--small button--link services__button">
                         View More
@@ -404,7 +465,106 @@
                     </span>
                     <div class="services__modal">
                         <div class="services__modal-content">
-                            <h4 class="services__modal-title">Branding <br> Designer</h4>
+                            <h4 class="services__modal-title">Ui/Ux <br> Design</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>I develop the user interface.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Web page development.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>I create ux element interactions.</p>
+                                </li><li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>I position your company brand.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__content">
+                    <div>
+                        <img src="./assets//img/smartphone.svg" alt="smartphone icon">
+                        <h3 class="services__title">Application <br> Development</h3>
+                    </div>
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Application <br> Development</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>I develop the user interface.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Web page development.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>I create ux element interactions.</p>
+                                </li><li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>I position your company brand.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__content">
+                    <div>
+                        <img src="./assets/img/price-tag.svg" alt="online commerce icon">
+                        <h3 class="services__title">E-Store <br> Development</h3>
+                    </div>
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">E-Store <br> Development</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>I develop the user interface.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Web page development.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>I create ux element interactions.</p>
+                                </li><li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>I position your company brand.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__content">
+                    <div>
+                        <img src="./assets/img/maintenance.svg" alt="maintenance icon">
+                        <h3 class="services__title">Maintenance <br> - </h3>
+                    </div>
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Maintenance <br> </h4>
                             <i class="uil uil-times services__modal-close"></i>
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
@@ -428,6 +588,7 @@
                 </div>
             </div>
         </section>
+<!-- PORTFOLIO  -->
         <section class="portfolio section" id="portfolio">
             <h2 class="section__title">Portfolio</h2>
             <span class="section__subtitle">Most recent work</span>
@@ -475,22 +636,7 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-        <section class="project section">
-            <div class="project__bg">
-                <div class="project__container container grid">
-                    <div class="project__data">
-                        <h2 class="project__title">You have a new project</h2>
-                        <p class="project__description">
-                            Contact me now and get a discount on your new project.
-                        </p>
-                        <a href="#contact" class="button button--flex button--white">
-                            Contact Me <i class="uil uil-message project__icon button__icon"></i>
-                        </a>
-                    </div>
-                    <img src="./assets//img/portfolio1.jpg" alt="project" class="project__img">
-                </div>
-            </div>
-        </section>
+<!-- CONTACT  -->
         <section class="contact section" id="contact">
             <h2 class="section__title">Contact Me</h2>
             <span class="section__subtitle">Get in touch</span>
@@ -539,14 +685,14 @@
                     </div>
                     <div>
                         <a href="#" class="button button--flex">
-                            Send Messagea <i class="uil uil-message button__icon"></i>
+                            Send Message <i class="uil uil-message button__icon"></i>
                         </a>
                     </div>
                 </form>
             </div>
         </section>
     </main>
-
+<!-- FOOTER -->    
     <footer class="footer">
         <div class="footer__bg">
             <div class="footer__container container grid">
@@ -565,21 +711,12 @@
                     <a href="https.//linkedin.com" target="__blank" class="footer__social"><i class="uil uil-linkedin-alt"></i></a>
                 </div>
             </div>
-            <p class="footer__copy">&#169; AdrienPauchet. All right reserved</p>
+            <p class="footer__copy">&#169; AdrienPauchet. All right reserved <br>
+            Icons made by <a class="footer__copy-link" href="https://www.freepik.com">Freepik</a> from <a class="footer__copy-link" href="https://www.flaticon.com/">www.flaticon.com</a></p>
         </div>
     </footer>
-
     <a href="#" class="scroll-top" id="scroll-top"><i class="uil uil-arrow-up scroll-top__icon"></i></a>
-
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/app.js"></script>
-
-    
-
-
-
-
-
-
 </body>
 </html>
