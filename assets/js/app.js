@@ -22,7 +22,7 @@ const navLink = document.querySelectorAll('.nav__link');
 
 function linkAction() {
     const navMenu = document.getElementById('nav-menu');
-    navMenu = navMenu.classList.remove('show-menu');
+    navMenu.classList.remove('show-menu');
 }
 
 navLink.forEach(link => link.addEventListener('click', linkAction));
@@ -98,7 +98,7 @@ let swiper = new Swiper('.swiper-container', {
 
 // Scroll active
 
-const sections = document.querySelectorAll('section[id');
+const sections = document.querySelectorAll('section[id]');
 
 function scrollActive() {
     
@@ -107,7 +107,7 @@ function scrollActive() {
     sections.forEach(section => {
         const sectionHeight = section.offsetHeight;
         const sectionTop = section.offsetTop - 50;
-        sectionId = section.getAttribute('id');
+        const sectionId = section.getAttribute('id');
         
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector(`.nav__menu a[href*=${sectionId}]`).classList.add('active-link');
@@ -171,6 +171,65 @@ themeButton.addEventListener('click', () => {
 });
 
 
+// onscroll animation
+
+function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+
+    );
+}
+
+function onScrollAnimation() {
+    
+    const aboutTitle = document.querySelector('.about-h2');
+    if(isInViewport(aboutTitle)) {
+        
+        aboutTitle.classList.add('animate__animated', 'animate__fadeInRight');
+        return;
+    }
+
+    const questionMark = document.querySelector('.question-mark');
+    if(isInViewport(questionMark)) {
+        
+        questionMark.classList.add('animated');
+        return;
+    }
+
+    const skillsTitle = document.querySelector('.skills-h2');
+    if(isInViewport(skillsTitle)) {
+        
+        skillsTitle.classList.add('animate__animated', 'animate__fadeInLeft');
+        return;
+    }
+
+    const servicesTitle = document.querySelector('.services-h2');
+    if(isInViewport(servicesTitle)) {
+        
+        servicesTitle.classList.add('animate__animated', 'animate__fadeInRight');
+        return;
+    }
+
+    const portfolioTitle = document.querySelector('.portfolio-h2');
+    if(isInViewport(portfolioTitle)) {
+        
+        portfolioTitle.classList.add('animate__animated', 'animate__fadeInLeft');
+        return;
+    }
+
+    const contactTitle = document.querySelector('.contact-h2');
+    if(isInViewport(contactTitle)) {
+        
+        contactTitle.classList.add('animate__animated', 'animate__fadeInRight');
+        return;
+    }
+}
+
+window.addEventListener('scroll', onScrollAnimation);
 
 
 
