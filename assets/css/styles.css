@@ -4,8 +4,8 @@
     --header-height: 3rem;
 
     --hue-color: 230;
-    --primary-color: hsl(var(--hue-color), 69%, 61%);
-    --secondary-color: hsl(var(--hue-color), 69%, 61%);
+    --primary-color: hsl(var(--hue-color), 69%, 57%);
+    --secondary-color: hsl(var(--hue-color), 69%, 60%);
     --primary-color-alt: hsl(var(--hue-color), 57%, 53%);
     --primary-color-light: hsl(var(--hue-color), 92%, 85%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
@@ -77,10 +77,10 @@ body.dark-theme {
 }
 
 .change-theme {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: var(--title-color);
     margin-right: var(--mb-1);
-    cursor: pointer;
+    cursor:pointer;
 }
 
 .change-theme:hover {
@@ -108,8 +108,6 @@ body {
     overflow-x: hidden;
 }
 
-
-
 h1, h2, h3, h4 {
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
@@ -134,7 +132,6 @@ img {
     padding: 2rem 0 4rem;
     overflow: hidden;
     max-width: 100vw;
-
 }
 
 .section__title {
@@ -160,7 +157,6 @@ img {
 .grid {
     display: grid;
     gap: 1.5rem;
-
 }
 
 .header {
@@ -209,7 +205,7 @@ img {
 }
 
 .nav__toggle {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
@@ -275,7 +271,7 @@ img {
 
 .home__content {
     grid-template-columns: .75fr 3fr;
-    padding-top: 3.5rem;
+    padding-top: 2.5rem;
     align-items: center;
 }
 
@@ -857,10 +853,12 @@ img {
 
 .portfolio__container {
     overflow: hidden;
+    cursor: e-resize;
 }
 
 .portfolio__content {
     padding: 0 1.5rem;
+    
 }
 
 .portfolio__img {
