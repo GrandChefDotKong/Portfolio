@@ -1,0 +1,78 @@
+/* Intro animation */
+.intro {
+    background-color: var(--secondary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.intro-text {
+    font-family: "Heebo", sans-serif;
+    font-size: var(--h1-font-size);
+    width: fit-content;
+    margin-left: 1rem;
+    background-color: var(--secondary-color);
+}
+
+.text {
+    color: rgb(233, 233, 233);
+}
+
+.slider {
+    background-color: rgb(97, 105, 109);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    z-index: 12;
+}
+
+.hide {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+}
+
+.hide span {
+    display: inline-block;
+    transform: translateY(100%);
+}
+
+.typing {
+    position: relative;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.typing::after {
+    content: "|";
+    position: absolute;
+    width: 0.3rem;
+    height: 2.0rem;
+    animation: blink 0.5s infinite ease;
+}
+
+@media screen and (min-width: 769px) {
+
+    .intro-text {
+        font-size: 3rem;}
+}
+
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+

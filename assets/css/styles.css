@@ -325,7 +325,6 @@ img {
 .home__description {
     margin-bottom: var(--mb-3);
     font-size: var(--h3-font-size);
-
 }
 
 .home__contact {
@@ -802,13 +801,13 @@ img {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, .5);
-    display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
     z-index: var(--z-modal);
     opacity: 0;
     visibility: hidden;
+    display: none;
     transition: .3s;
 }
 
@@ -849,6 +848,7 @@ img {
 .active-modal {
     opacity: 1;
     visibility: visible;
+    display: flex;
 }
 
 .portfolio__container {
@@ -1498,7 +1498,7 @@ img {
     }
 
     .home__blob {
-        width: 610px;
+        width: 40vw;
     }
 
     .home__social {
@@ -1616,3 +1616,8 @@ img {
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .home__subtitle {
+
+    }
+}

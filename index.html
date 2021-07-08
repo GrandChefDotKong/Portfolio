@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <title>Portfolio</title>
+    <title>Your freelance developer</title>
 </head>
 <body>
 <!-- HEADER -->
@@ -40,7 +41,7 @@
                     </li>
                     <li class="nav__item">
                         <a href="#portfolio" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i> Special Features
+                            <i class="uil uil-scenery nav__icon"></i>Features
                         </a>
                     </li>
                     <li class="nav__item">
@@ -86,10 +87,10 @@
                         </svg>
                     </div>
                     <div class="home__data">
-                        <h1 class="home__title animate__animated animate__lightSpeedInLeft">Looking for a developer ?</h1>
-                        <h3 class="home__subtitle">Hi, I'm Adrien</h3>
+                        <h1 class="home__title animate__animated animate__lightSpeedInLeft">Hi, I am Adrien</h1>
+                        <h3 class="home__subtitle">A passionate <span class="typing"></span> &nbsp;developer</h3>
                         <p class="home__description">
-                            A passionate full-stack developer, here to help you bring your ideas to life.
+                            The jungle of web development can be confusing, let me help you bring your ideas to life.
                         </p>
                         <a href="#contact" class="home__contact button button--flex button--animated">
                             Contact Me <i class="uil uil-message button__icon"></i>
@@ -381,7 +382,7 @@
                 </div>
                 <div class="services__content">
                     <div class="services__card">
-                        <img src="./assets//img/smartphone.svg" class="services__img" alt="smartphone icon">
+                        <img src="./assets/img/smartphone.svg" class="services__img" alt="smartphone icon">
                         <h3 class="services__title">Android <br> Application</h3>
                     </div>
                     <span class="button button--flex button--small button--link services__button">
@@ -439,7 +440,28 @@
                         </div>
                     </div>
                 </div>
-                
+                <div class="services__content">
+                    <div class="services__card">
+                        <img src="./assets/img/message.svg" class="services__img" alt="online commerce icon">
+                        <h3 class="services__title">More <br>Coming soon</h3>
+                    </div>
+                    <a href="#contact" class="button button--flex button--small button--link services__button">
+                        Contact me
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">E-Store <br> Development</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Responsive Design</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 <!-- PORTFOLIO  -->
@@ -491,6 +513,17 @@
                             <p class="portfolio__description">
                                 AI assistants and bots can learn, collect data, or solve difficult issues. 
                                 This domain is considered one of the most influential technologies that shape the future of web development. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./assets/img/lighthouse.png" alt="work" class="portfolio__content grid">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Google Lighthouse Highscore</h3>
+                            <p class="portfolio__description">
+                                Google Lighthouse is an open-source, automated tool for measuring the quality of web pages. 
+                                It can be run against any web page, public or requiring authentication. 
+                                Google Lighthouse audits performance, accessibility and search engine optimization of web pages.
                             </p>
                         </div>
                     </div>
@@ -575,7 +608,31 @@
             Icons made by <a class="footer__copy-link" href="https://www.freepik.com">Freepik</a> from <a class="footer__copy-link" href="https://www.flaticon.com/">www.flaticon.com</a></p>
         </div>
     </footer>
+<!-- SCROLL TOP BUTTON  -->
     <a href="#" class="scroll-top" id="scroll-top"><i class="uil uil-arrow-up scroll-top__icon"></i></a>
+<!-- INTRO ANIMATION  -->
+    <div class="intro">
+        <div class="intro-text">
+            <h1 class="hide">
+                <span class="text">Are you Looking</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text">for a</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text">developer ?</span>
+            </h1>
+        </div>
+    </div>
+    <div class="slider"></div>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/animation.js"></script>
+<!-- INTRO ANIMATION END  -->
+<!-- CONTACT MAIL HANDLER  -->
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
@@ -604,6 +661,7 @@
             });
         }
     </script>
+<!-- CONTACT MAIL HANDLER END -->
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/app.js"></script>
 </body>
