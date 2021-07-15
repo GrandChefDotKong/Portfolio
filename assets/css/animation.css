@@ -1,6 +1,11 @@
 /* Intro animation */
 .intro {
     background-color: var(--secondary-color);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    animation: example 2s linear 0s 1;
+    animation-fill-mode: forwards;
     position: fixed;
     top: 0;
     left: 0;
@@ -17,11 +22,12 @@
     font-size: var(--h1-font-size);
     width: fit-content;
     margin-left: 1rem;
-    background-color: var(--secondary-color);
+    background-color: transparent;
 }
 
 .text {
     color: rgb(233, 233, 233);
+    background-color: transparent;
 }
 
 .slider {
@@ -36,7 +42,7 @@
 }
 
 .hide {
-    background-color: var(--secondary-color);
+    background-color: transparent;
     overflow: hidden;
 }
 
