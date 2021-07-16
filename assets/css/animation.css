@@ -1,11 +1,10 @@
 /* Intro animation */
 .intro {
-    background-color: var(--secondary-color);
+    background-color: var(--container-color);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    animation: example 2s linear 0s 1;
-    animation-fill-mode: forwards;
+    background-image: url(../img/Parabolic-Triangle_2.svg);
     position: fixed;
     top: 0;
     left: 0;
@@ -20,18 +19,35 @@
 .intro-text {
     font-family: "Heebo", sans-serif;
     font-size: var(--h1-font-size);
-    width: fit-content;
-    margin-left: 1rem;
     background-color: transparent;
+    line-height: 10vh;
 }
 
 .text {
-    color: rgb(233, 233, 233);
+    color: var(--title-color);
     background-color: transparent;
+    width: 75vw;
+    margin: auto;
 }
 
+@media screen and (min-width: 769px) {
+
+    .intro-text {
+        font-size: 3rem;
+        width: fit-content;
+        margin-left: 1rem;
+        background-color: transparent;
+        line-height: 12vh;
+    }
+
+    .text {
+        width: fit-content;
+    }
+}
+
+
 .slider {
-    background-color: rgb(97, 105, 109);
+    background-color: var(--primary-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -65,13 +81,6 @@
     animation: blink 0.5s infinite ease;
 }
 
-@media screen and (min-width: 769px) {
-
-    .intro-text {
-        font-size: 3rem;}
-}
-
-
 @keyframes blink {
     0% {
         opacity: 0;
@@ -80,5 +89,10 @@
         opacity: 1;
     }
 }
+
+
+
+/* INTRO TRIANGLE ANIMATION */
+
 
 

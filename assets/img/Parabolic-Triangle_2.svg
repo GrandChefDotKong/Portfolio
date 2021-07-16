@@ -1,0 +1,389 @@
+﻿<svg xmlns='http://www.w3.org/2000/svg' class="animated" id="intro_animation" viewBox='0 0 2000 1500' version="1.1" 
+xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs">
+<style>
+
+    path {
+        opacity: .3;
+    }
+
+    .group1 {
+        animation: group_1 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes group_1 {
+        0% {
+            transform: rotateZ(0deg);
+        }
+        100% {
+            transform: rotateZ(-160deg);
+        }
+    }
+
+    .stroke1 {
+        animation: stroke_1 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_1 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(-80deg) scale(0.2);
+        }
+    }
+
+    .stroke2 {
+        animation: stroke_2 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_2 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(-70deg) scale(0.3);
+        }
+    }
+
+    .stroke3 {
+        animation: stroke_3 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_3 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(-60deg) scale(0.4);
+        }
+    }
+
+    .stroke4 {
+        animation: stroke_4 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_4 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(-50deg) scale(0.5);
+        }
+    }
+
+    .stroke5 {
+        animation: stroke_5 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_5 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(-40deg) scale(0.6);
+        }
+    }
+
+    .stroke6 {
+        animation: stroke_6 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_6 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(-30deg) scale(0.7);
+        }
+    }
+
+    .stroke7 {
+        animation: stroke_7 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_7 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(-20deg) scale(0.8);
+        }
+    }
+
+    .stroke8 {
+        animation: stroke_8 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_8 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(-10deg) scale(0.9);
+        }
+    }
+
+    .stroke9 {
+        animation: stroke_9 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_9 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(0deg) scale(1);
+        }
+    }
+
+    .stroke10 {
+        animation: stroke_10 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_10 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(10deg) scale(1.1);
+        }
+    }
+
+    .stroke11 {
+        animation: stroke_11 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_11 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(20deg) scale(1.2);
+        }
+    }
+
+    .stroke12 {
+        animation: stroke_12 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_12 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(30deg) scale(1.3);
+        }
+    }
+
+    .stroke13 {
+        animation: stroke_13 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_13 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(40deg) scale(1.4);
+        }
+    }
+
+    .stroke14 {
+        animation: stroke_14 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_14 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(50deg) scale(1.5);
+        }
+    }
+
+    .stroke15 {
+        animation: stroke_15 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_15 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(60deg) scale(1.6);
+        }
+    }
+
+    .stroke16 {
+        animation: stroke_16 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_16 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(70deg) scale(1.7);
+        }
+    }
+
+    .stroke17 {
+        animation: stroke_17 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_17 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(80deg) scale(1.8);
+        }
+    }
+
+    .stroke18 {
+        animation: stroke_18 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_18 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(90deg) scale(1.9);
+        }
+    }
+
+    .stroke19 {
+        animation: stroke_19 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_19 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(100deg) scale(2);
+        }
+    }
+
+    .stroke20 {
+        animation: stroke_20 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_20 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(110deg) scale(2.1);
+        }
+    }
+
+    .stroke21 {
+        animation: stroke_21 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_21 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(120deg) scale(2.2);
+        }
+    }
+
+    .stroke22 {
+        animation: stroke_22 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_22 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(130deg) scale(2.3);
+        }
+    }
+
+    .stroke23 {
+        animation: stroke_23 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_23 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(140deg) scale(2.4);
+        }
+    }
+
+    .stroke24 {
+        animation: stroke_24 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_24 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(150deg) scale(2.5);
+        }
+    }
+
+    .stroke25 {
+        animation: stroke_25 1.5s linear 0s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes stroke_25 {
+        0% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+            transform: rotateZ(160deg) scale(2.6);
+        }
+    }
+</style>
+<defs><path fill='none' stroke-width='1' id='a' d='M0-478l-413.96 717h827.92L0-478l-413.96 717h827.92z'/></defs>
+<g style='transform-origin:center'><g style='transform-origin:center'>
+<g class="group1" style='transform-origin:center'><g transform='translate(1000 750)'>
+<use class="stroke1" stroke='#ff5ba8' href='#a' /><use class="stroke2" stroke='#fb59ab' href='#a' />
+<use class="stroke3" stroke='#f758ae' href='#a' /><use class="stroke4" stroke='#f357b1' href='#a' />
+<use class="stroke5" stroke='#ee56b4' href='#a' /><use class="stroke6" stroke='#e956b7' href='#a' />
+<use class="stroke7" stroke='#e455ba' href='#a' /><use class="stroke8" stroke='#df55bd' href='#a' />
+<use class="stroke9" stroke='#d955c0' href='#a' /><use class="stroke10" stroke='#d355c3' href='#a' />
+<use class="stroke11" stroke='#cd55c5' href='#a' /><use class="stroke12" stroke='#c655c8' href='#a' />
+<use class="stroke13" stroke='#c056ca' href='#a' /><use class="stroke14" stroke='#b957cd' href='#a' />
+<use class="stroke15" stroke='#b157cf' href='#a' /><use class="stroke16" stroke='#a958d1' href='#a' />
+<use class="stroke17" stroke='#a159d3' href='#a' /><use class="stroke18" stroke='#995ad5' href='#a' />
+<use class="stroke19" stroke='#905ad6' href='#a' /><use class="stroke20" stroke='#865bd8' href='#a' />
+<use class="stroke21" stroke='#7c5cd9' href='#a' /><use class="stroke22" stroke='#715ddb' href='#a' />
+<use class="stroke23" stroke='#645edc' href='#a' /><use class="stroke24" stroke='#565edc' href='#a' />
+<use class="stroke25" stroke='#465fdd' href='#a' />
+</g></g></g></g></svg>
