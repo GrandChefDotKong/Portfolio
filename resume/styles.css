@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --secondary-blue: #4c99dc;
+    --primary-grey: #776C66;
+
+    --title-color: #F2F2F2;
+    --text-color: #BFBFBF;
+    --background-color: #2B2B2B;
+    --rightside-color: #212121;
+    --leftside-color: #181616;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    min-height: 1000px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+    z-index: 5;
+}
+
+.container .left_side {
+    position: relative;
+    width: 370px;
+    padding-bottom: 40px;
+    background-color: var(--leftside-color);
+}
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0px;
+    margin: 0 40px;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.profileText .imgBox {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2 {
+    color: var(--title-color);
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText h2 span {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--secondary-blue);
+}
+
+.contactInfo {
+    padding: 0px 40px;
+    padding-top: 40px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: var(--title-color);
+}
+
+.contactInfo ul {
+    position: relative;
+}
+
+.contactInfo ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: var(--secondary-blue);
+}
+
+.contactInfo ul li span {
+    font-weight: 300;
+}
+
+.contactInfo.education li {
+    margin-bottom: 15px;
+}
+
+.contactInfo.education h5 {
+    color: var(--secondary-blue);
+    font-weight: 500;
+}
+
+.contactInfo.education h4 {
+    font-weight: 500;
+}
+
+.contactInfo.education h4:nth-child(2) {
+    font-weight: 400;
+}
+
+.contactInfo.languages .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: var(--text-color);
+    display: block;
+    margin-top: 5px;
+}
+
+.contactInfo.languages .percent::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--text-color);
+    content: '';
+    z-index: 99;
+    animation: reveale 3.5s ease-in 1.2s 1 forwards;
+}
+
+.contactInfo.languages .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--secondary-blue);
+}
+
+.container .right_side {
+    position: relative;
+    background-color: var(--rightside-color);
+    padding: 60px 40px;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.title2 {
+    position: relative;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.title2::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--rightside-color);
+    content: '';
+    animation: reveale 1s ease-in 0.1s 1 forwards;
+}
+
+.career-goal {
+    text-indent: 20px;
+}
+
+p {
+    color: var(--text-color);
+}
+
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 29px 0;
+}
+
+.about .box .year {
+    min-width: 150px;
+}
+
+.about .box .year h5 {
+    text-transform: uppercase;
+    color: var(--secondary-blue);
+    font-weight: 600;
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    color:  var(--title-color);
+    font-size: 1rem;
+}
+
+.about .box .text ul li {
+    color:  var(--text-color);
+    font-size: .9rem;
+}
+
+.about .box .text a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.85rem;
+}
+
+.about .box .text a:hover {
+    color: var(--secondary-blue);
+    transition: 0.2s;
+}
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills a {
+    text-decoration: none;
+}
+
+.skills h4 {
+    color: var(--title-color);
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.skills .box h4:hover {
+    color:var(--secondary-blue);
+    transition: 0.5s;
+}
+
+.skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: var(--text-color);
+}
+
+.skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--secondary-blue);
+}
+
+.skills .box .percent::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--text-color);
+    content: '';
+    z-index: 99;
+    animation: reveale 3.5s ease-in 1.2s 1 forwards;
+}
+
+.skills .box .framework {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.interest ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.interest ul li {
+    list-style: none;
+    color: var(--text-color);
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.interest ul li .fa {
+    color: var(--secondary-blue);
+    font-size: 18px;
+    width: 20px;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 700px) {
+    .container {
+        margin: 0;
+        margin-top: 0px;
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .container .left_side {
+        background-color: transparent;
+        padding-bottom: 0;
+    }
+
+    .profileText {
+        background-color: var(--leftside-color);
+        width: 100vw;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .profileBottomBox {
+        height: 20vh;
+        background: transparent;
+    }
+
+    .contactInfo {
+        background-color: var(--leftside-color);
+        margin-bottom: 0;
+    }
+
+    .interest ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contactInfo ul li {
+        margin: 0;
+    }
+
+    .contactInfo.education li {
+        margin-bottom: 0;
+    }
+
+    .contactInfo.languages {
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .container .left_side { 
+        width: 100%;
+    }
+
+    .profileText {
+        margin-bottom: 100px;
+    }
+
+    .about .box {
+        flex-direction: column;
+    }
+
+    .about .box .year {
+        margin-bottom: 5px;
+    }
+
+    .interest ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skills .box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@keyframes reveale {
+    from { width: 100%; }
+    to { width: 0%; }
+}
