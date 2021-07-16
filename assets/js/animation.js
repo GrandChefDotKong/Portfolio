@@ -11,7 +11,7 @@ tl.fromTo('.big-text', { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1" );
 
 ///// TYPING //////
 
-const words = ['Front-End ', 'Back-End ', 'Application ', 'Software '];
+const words = ['Front-End ', 'Back-End ', 'Application ', 'Software ', 'Game ' ];
 let countLetter = 0;
 let countWord = 0;
 

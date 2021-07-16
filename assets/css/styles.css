@@ -1627,7 +1627,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-    .home__subtitle {
-
+    .home__content {
+        padding-top: 1rem;
     }
 }
